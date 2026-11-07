@@ -176,11 +176,11 @@
 												"parameters": {
 													"container_name": "bronze",
 													"folder_name": {
-														"value": "@pipeline().parameters.table_name",
+														"value": "@{item().table}cdc",
 														"type": "Expression"
 													},
 													"filename": {
-														"value": "@concat(pipeline().parameters.table_name, '_', variables('current_datetime'))",
+														"value": "@concat(item().table, '_', variables('current_datetime'))",
 														"type": "Expression"
 													}
 												}
