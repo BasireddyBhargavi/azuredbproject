@@ -1,0 +1,15 @@
+{
+	"name": "practiceadfpoc",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "d6e4690f-b7b7-429c-9fa5-ac6414150839",
+		"tenantId": "5052d434-1f95-47f4-a0ca-b056330e5ecf"
+	}
+}
