@@ -79,7 +79,10 @@
 									"type": "DatasetReference",
 									"parameters": {
 										"container_name": "bronze",
-										"folder_name": "dimuser",
+										"folder_name": {
+											"value": "@{item().table}",
+											"type": "Expression"
+										},
 										"filename": {
 											"value": "@concat(item().table, '_', variables('current_datetime'))",
 											"type": "Expression"
@@ -180,7 +183,7 @@
 												"parameters": {
 													"container_name": "bronze",
 													"folder_name": {
-														"value": "@{item().table}cdc",
+														"value": "@{item().table}",
 														"type": "Expression"
 													},
 													"filename": {
