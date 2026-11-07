@@ -253,7 +253,7 @@
 									"type": "DatasetReference",
 									"parameters": {
 										"container_name": "bronze",
-										"folder_name": "cdc",
+										"folder_name": "cdc_users",
 										"Filename": "cdc.json"
 									}
 								}
