@@ -68,7 +68,7 @@
 						"type": "DatasetReference",
 						"parameters": {
 							"container_name": "bronze",
-							"folder_name": "DimUsers",
+							"folder_name": "dimuser",
 							"filename": {
 								"value": "@concat(pipeline().parameters.table_name, '_', variables('current_datetime'))",
 								"type": "Expression"
